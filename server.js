@@ -4,12 +4,14 @@ import chalk from 'chalk';
 import moment from 'moment';
 import axios from 'axios';
 import _ from 'lodash';
+import cors from 'cors';
 import { engine } from 'express-handlebars';
 
 import 'dotenv/config'
 import path from 'path';
 
 const app = express()
+app.use(cors)
 
 app.engine('hbs', engine());
 app.set('view engine', 'hbs');
