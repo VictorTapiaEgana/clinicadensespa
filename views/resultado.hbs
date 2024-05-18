@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <title>a clínica DENDE Spa</title>
+</head>
+<body>
+    <h1>Resultados:</h1>
+
+    <h2> Mujeres:  </h3>
+    <ol>       
+          {{#each arregloDividido1}}            
+                <li>Nombre:{{this.Nombre}} - Apellido:{{this.Apellido}} - ID:{{this.ID}} - Timestamp:{{this.Timestamp}}</li> 
+          {{/each}}  
+    </ol>
+      
+      <h2>Hombre:</h3>
+    <ol>          
+           {{#each arregloDividido2}}            
+                <li>Nombre:{{this.Nombre}} - Apellido:{{this.Apellido}} - ID:{{this.ID}} - Timestamp:{{this.Timestamp}}</li> 
+           {{/each}}
+    </ol>
+    
+</body>
+</html>

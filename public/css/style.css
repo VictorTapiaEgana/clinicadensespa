@@ -1,0 +1,30 @@
+body{
+    background-color: #212529;
+    height: 100vh;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+h1{
+    text-decoration: underline;
+}
+
+h1,h2,li{
+    color: #6c757d;
+}
+
+li{
+    font-size: 20px;
+}
+
+button{
+    background-color: #6c757d;
+    border: none;
+    padding: 10px;
+    color:whitesmoke;
+}
