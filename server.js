@@ -13,9 +13,13 @@ import path from 'path';
 const app = express()
 app.use(cors())
 
-app.engine('hbs', engine());
-app.set('view engine', 'hbs');
-app.set('views', './views');
+app.engine('hbs', engine({
+        extname: '.hbs',   
+        layoutsDir:path.join(process.cwd() , '/views'),        
+}));
+
+// app.set('view engine', 'hbs');
+// app.set('views', './views');
 
 
 const PORT = process.env.PORT || 3001;
