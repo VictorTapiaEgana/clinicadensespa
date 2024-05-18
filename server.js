@@ -18,10 +18,6 @@ app.engine('hbs', engine({
         layoutsDir:path.join(process.cwd() , '/views'),        
 }));
 
-// app.set('view engine', 'hbs');
-// app.set('views', './views');
-
-
 const PORT = process.env.PORT || 3001;
 moment.locale('es');
 
