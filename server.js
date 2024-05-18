@@ -11,7 +11,7 @@ import 'dotenv/config'
 import path from 'path';
 
 const app = express()
-app.use(cors)
+app.use(cors())
 
 app.engine('hbs', engine());
 app.set('view engine', 'hbs');
