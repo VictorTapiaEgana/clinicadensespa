@@ -50,7 +50,7 @@ app.post('/ObtenerDatos',(req,res)=>{
 
     const arregloDividido = _.partition(pacientes,(paci) =>paci.sexo == 'female' );
 
-    res.render('resultado', {
+    res.render('resultado.hbs', {
         arregloDividido1:arregloDividido[0],
         arregloDividido2:arregloDividido[1],
         layout: false
